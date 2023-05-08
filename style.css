@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #000000;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  background-image: url(/image/5bd329b2b5293-wallpaper-e01065c97f866e53d8af0756db861468.jpg); /* add your image url here */
+  background-size: cover; /* scale the image to cover the entire background */
+  background-position: center; /* position the image in the center of the background */
+ 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+form {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  padding: 60px;
+  border-radius: 10px;
+  max-width: 500px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+label {
+  font-size: 1.2em;
+  margin-right: 20px;
+  display: block;
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: solid linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+}
+
+.button_calculate{
+        background:linear-gradient(rgba(25, 221, 0.5), rgba(135, 235, 235, 0));
+       color: #f8f2f2;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+  font-size: 15px;
+  font-weight: bold;
+      }
+
+.button_fraud_eg{
+  width: 180px ;
+  color: #f8f2f2;
+  padding:12px 0px ;
+  font-size: 13px;
+  font-weight: bold;
+  background:linear-gradient(rgba(25, 25, 0.5), rgba(25, 255, 255, 0));
+  border: 0;
+  border-radius: 20px;
+  /*outline: none;*/
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.button_no_fraud_eg{
+  width: 180px ;
+  color: #fffafa;
+  padding:12px 0px ;
+  font-size: 13px;
+  font-weight: bold;
+  background:linear-gradient(rgba(25, 25, 0.5), rgba(25, 255, 255, 0));
+  border: 0;
+  border-radius: 20px;
+  /*outline: none;*/
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.clear_button{
+  width: 180px ;
+  color: #f8f2f2;
+  padding:12px 0px ;
+  font-size: 13px;
+  font-weight: bold;
+  background:linear-gradient(rgba(25, 25, 0.5), rgba(25, 25, 255, 0));
+  border: 0;
+  border-radius: 20px;
+  /*outline: none;*/
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.button_calculate:active {
+  transform: translateY(-1px)
+}
+.button_fraud_eg:active {
+  transform: translateY(-1px)
+}
+
+.button_no_fraud_eg:active {
+  transform: translateY(-1px)
+}
+
+.clear_button:active {
+  transform: translateY(-1px)
+}
+
+.button_calculate:hover{
+  background-color: #a2a9a9;
+  cursor: pointer;
+}
+.button_fraud_eg:hover{
+  background-color: #a2a9a9;
+  cursor: pointer;
+}
+
+.button_no_fraud_eg:hover{
+  background-color: #a2a9a9;
+  cursor: pointer;
+}
+
+.clear_button:hover{
+  background-color: #a2a9a9;
+  cursor: pointer;
+}
+
+.container:hover{
+  transform: translateY(-5px);
+}
+
+.buttons{
+  height: 50px;
+  display:flex;
+  margin: 10px 15px;
+  justify-content: space-evenly;
+}
+     #result {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 1.5em;
+  width: 50%;
+}
+
+
+#header {
+  text-align: center;
+  color: #f8f2f2;
+  width: 30%;
+  font-size: 28px;
+  font-style: inherit;
+
+}
+
+#header2 {
+  text-align: left;
+  width: 40%;
+  font-size: 15px;
+  color: #f8f2f2;
+  margin-top: 20px;
+}
+
+#footer {
+  width: 40%;
+  color: #f8f2f2;
+  font-size: 14px;
+  text-align: left;
+}

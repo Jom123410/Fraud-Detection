@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Fraud Detection Algorithm</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="header">Financial Fraud Detection Algorithm</h1>
+    <h2 id="header2">This webpage will help auditors detecting fraud in financial statements by utilizing financial ratio analysis.The model is based on research done by Lithuanian researchers Rasa Kanapickienė and Živilė Grundienė in 2015. The designed model can be used by external users of financial statement information when making decisions for investment and company evaluation. Enter the company's financial statment information in the space provided below. </h2>
+    <form>
+      
+      
+      <div class="input-box">
+            <label for="cash" class="details">Cash</label>
+            <input type="number" id="CS" placeholder="Enter cash value" required>
+          </div>
+      <br>
+       <div class="input-box">
+            <label for="CL" class="details">Current Liabilties</label>
+            <input type="number" id="CL" placeholder="Enter current liabilities" required>
+          </div>
+      <br>
+     <div class="input-box">
+            <label for="TL" class="details">Total Liabilties</label>
+            <input type="number" id="TL" placeholder="Enter total liabilities" required>
+          </div>
+      <br>
+      <div class="input-box">
+            <label for="TA" class="details">Total Assets</label>
+            <input type="number" id="TA" placeholder="Enter total assets" required>
+          </div>
+      <br>
+      <div class="input-box">
+            <label for="SA" class="details">Sales</label>
+            <input type="number" id="SA" placeholder="Enter sales" required>
+          </div>
+      <br>
+     <div class="input-box">
+            <label for="FA" class="details">Fixed Assets</label>
+            <input type="number" id="FA" placeholder="Enter fixed assets" required>
+          </div>
+      <br>
+      <div class="input-box">
+            <label for="INV" class="details">Inventories</label>
+            <input type="number" id="INV" placeholder="Enter Inventories" required>
+          </div>
+      <br>
+      <div class="input-box">
+            <label for="CA" class="details">Current assets</label>
+            <input type="number" id="CA" placeholder="Enter Current assets" required>
+          </div>
+ 
+      <br>
+      <button type="button" onclick="calculate()" class="button_calculate" >CALCULATE</button>
+      <br>
+      <div class="buttons">
+        <div>
+          <button type="button" onclick="FraudExample()" class="button_fraud_eg">Fraudulent Data Example</button>
+        </div>
+          <div>
+          <button type="button" onclick="NoFraudExample()"  class="button_no_fraud_eg">Non Fraudulent Data Example</button>
+        </div>
+     
+        <div>
+         <button type="button" onclick="ClearButton()" class="clear_button" id="clear_button">Clear Form</button>
+        </div>
+      </div>   
+    </form>
+    <div class="result-container" >
+      <p id="result-text" ></p>
+      <div id="result" ></div>
+    </div>
+    <h3 id="footer">This website is built based on the model 3 of the paper <a href="https://www.sciencedirect.com/science/article/pii/S1877042815059005">"The Model of Fraud Detection in Financial Statements by Means of Financial Ratios."</a> This model introduces a methodology for detecting fraud in financial statements by utilizing financial ratio analysis.  Rasa Kanapickiene and Zivile Grundiene, from Vilnius Universtiy, Lithuania, analyzed 40 sets of fradulent financial statements and 125 sets of non-fradulent financial statements. They concluded that the Model 3 of the Table 2 from the article was used to built the model with the accuracy of 94.4%. 
+    Special thanks to Rasa Kanapickiene and Zivile Grundiene. </h3>
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
